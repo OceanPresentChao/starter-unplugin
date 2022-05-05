@@ -1,6 +1,16 @@
 {
   "name": "starter-unplugin",
   "version": "0.0.0",
+  "license": "MIT",
+  "author": "OceanPresent <oceanpresent@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OceanPresentChao/starter-unplugin.git"
+  },
+  "keywords": [
+    "oceanpresent"
+  ],
+  "homepage": "https://github.com/OceanPresentChao/starter-unplugin",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",

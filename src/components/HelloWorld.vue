@@ -22,7 +22,7 @@ function decrease() {
       <a target="_blank" href="https://vueuse.org/">VueUse</a>.
     </h3>
     <div>
-      <div>
+      <div class="text-green-400">
         Count:{{ count }}
       </div>
       <button @click="increment">

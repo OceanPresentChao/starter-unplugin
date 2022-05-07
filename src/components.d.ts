@@ -4,13 +4,7 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    Footer: typeof import('./components/Footer.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
-    ListPosts: typeof import('./components/ListPosts.vue')['default']
-    NavBar: typeof import('./components/NavBar.vue')['default']
-    Post: typeof import('./components/Post.vue')['default']
-    SelfPage: typeof import('./components/SelfPage.vue')['default']
-    ToggleTheme: typeof import('./components/ToggleTheme.vue')['default']
   }
 }
 

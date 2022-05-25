@@ -5,12 +5,23 @@
   "author": "OceanPresent <oceanpresent@163.com>",
   "repository": {
     "type": "git",
-    "url": "https://github.com/OceanPresentChao/starter-unplugin.git"
+    "url": "https://github.com/OceanPresentChao/[[name]].git"
   },
   "keywords": [
     "oceanpresent"
   ],
-  "homepage": "https://github.com/OceanPresentChao/starter-unplugin",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/[[name]].umd.js",
+  "module": "./dist/[[name]].es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/[[name]].es.js",
+      "require": "./dist/[[name]].umd.js"
+    }
+  },
+  "homepage": "https://github.com/OceanPresentChao/[[name]]",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",

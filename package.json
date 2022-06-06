@@ -30,7 +30,8 @@
   },
   "dependencies": {
     "@vueuse/core": "^8.2.3",
-    "vue": "^3.2.31"
+    "vue": "^3.2.31",
+    "vue-i18n": "^9.1.10"
   },
   "devDependencies": {
     "@iconify/vue": "^3.2.1",

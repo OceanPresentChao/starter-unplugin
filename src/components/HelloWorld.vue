@@ -3,6 +3,8 @@ defineProps<{
   msg: string
 }>()
 const count = ref(0)
+const { t, locale, availableLocales } = useI18n()
+
 function increment() {
   count.value++
 }
@@ -10,6 +12,13 @@ function increment() {
 function decrease() {
   count.value--
 }
+
+function changeLocale() {
+  const index = availableLocales.indexOf(locale.value)
+  locale.value = availableLocales[(index + 1) % availableLocales.length]
+}
+
+
 </script>
 
 <template>
@@ -25,12 +34,23 @@ function decrease() {
       <div class="text-green-400">
         Count:{{ count }}
       </div>
-      <button @click="increment">
-        add count
-      </button>
-      <button @click="decrease">
-        decrease count
-      </button>
+      <div class="flex justify-evenly">
+        <button @click="increment">
+          add count
+        </button>
+        <button @click="decrease">
+          decrease count
+        </button>
+      </div>
+      <div>
+        <button @click="changeLocale">
+          Change Locale:
+        </button>
+        <span class="text-blue-400">
+          {{ t("msg") }}
+        </span>
+      </div>
+
     </div>
   </div>
 </template>

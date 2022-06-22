@@ -17,13 +17,13 @@ function changeLocale() {
   const index = availableLocales.indexOf(locale.value)
   locale.value = availableLocales[(index + 1) % availableLocales.length]
 }
-
-
 </script>
 
 <template>
   <div class="greetings">
-    <h1 class="green">{{ msg }}</h1>
+    <h1 class="green">
+      {{ msg }}
+    </h1>
     <h3>
       You’ve successfully created a project with
       <a target="_blank" href="https://vitejs.dev/">Vite</a> +
@@ -50,7 +50,6 @@ function changeLocale() {
           {{ t("msg") }}
         </span>
       </div>
-
     </div>
   </div>
 </template>

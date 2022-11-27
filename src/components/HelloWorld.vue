@@ -31,10 +31,10 @@ function changeLocale() {
       <a target="_blank" href="https://vueuse.org/">VueUse</a>.
     </h3>
     <div>
-      <div class="text-green-400">
+      <div text-green-400>
         Count:{{ count }}
       </div>
-      <div class="flex justify-evenly">
+      <div flex justify-evenly>
         <button @click="increment">
           add count
         </button>

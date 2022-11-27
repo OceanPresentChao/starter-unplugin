@@ -9,6 +9,8 @@ import {
 import {
   ElementPlusResolve, createStyleImportPlugin,
 } from 'vite-plugin-style-import'
+import Unocss from 'unocss/vite'
+import { presetAttributify, presetUno } from 'unocss'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -29,6 +31,13 @@ export default defineConfig({
     }),
     createStyleImportPlugin({
       resolves: [ElementPlusResolve()],
+    }),
+    Unocss({
+      presets: [
+        presetAttributify({ /* preset options */}),
+        presetUno(),
+        // ...custom presets
+      ],
     }),
   ],
   resolve: {
